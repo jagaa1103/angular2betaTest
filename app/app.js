@@ -9,7 +9,7 @@ System.register(['angular2/platform/browser', 'angular2/core'], function(exports
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var browser_1, core_1;
-    var AppComponent;
+    var AppComponent, Fruits;
     return {
         setters:[
             function (browser_1_1) {
@@ -22,17 +22,18 @@ System.register(['angular2/platform/browser', 'angular2/core'], function(exports
             AppComponent = (function () {
                 function AppComponent() {
                     this.creater = { name: "Jagaa" };
+                    this.fruits = Fruits;
                 }
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: '<h1>Hi Angular2Beta by {{creater.name}}</h1>'
+                        templateUrl: 'app/templates/app.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
                 return AppComponent;
             })();
-            ;
+            Fruits = ['Apple', 'Banana', 'Lemon', 'Coconut'];
             browser_1.bootstrap(AppComponent);
         }
     }

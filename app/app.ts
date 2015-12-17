@@ -7,11 +7,14 @@ interface Creater{
 
 @Component({
     selector: 'my-app',
-    template: '<h1>Hi Angular2Beta by {{creater.name}}</h1>'
+    templateUrl: 'app/templates/app.html'
 })
 
 class AppComponent {
   public creater: Creater = {name:"Jagaa"};
-};
+  public fruits = Fruits;
+}
+
+var Fruits: [string] = ['Apple', 'Banana', 'Lemon', 'Coconut'];
 
 bootstrap(AppComponent);
