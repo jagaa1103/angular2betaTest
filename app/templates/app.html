@@ -1,6 +1,8 @@
 <h1>Hi Angular2Beta by {{creater.name}}</h1>
 <div>
   <ul>
-    <li *ngFor="#fruit of fruits">{{fruit}}</li>
+    <li *ngFor="#fruit of fruits">
+      <a href="#" (click)="selectedFruit(fruit)">{{fruit}}</a>
+    </li>
   </ul>
 </div>

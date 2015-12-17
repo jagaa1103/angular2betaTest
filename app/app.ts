@@ -13,6 +13,9 @@ interface Creater{
 class AppComponent {
   public creater: Creater = {name:"Jagaa"};
   public fruits = Fruits;
+  selectedFruit(fruit){
+    alert('You selected '+fruit);
+  }
 }
 
 var Fruits: [string] = ['Apple', 'Banana', 'Lemon', 'Coconut'];

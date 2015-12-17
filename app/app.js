@@ -24,6 +24,9 @@ System.register(['angular2/platform/browser', 'angular2/core'], function(exports
                     this.creater = { name: "Jagaa" };
                     this.fruits = Fruits;
                 }
+                AppComponent.prototype.selectedFruit = function (fruit) {
+                    alert('You selected ' + fruit);
+                };
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
