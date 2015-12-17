@@ -21,16 +21,18 @@ System.register(['angular2/platform/browser', 'angular2/core'], function(exports
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
+                    this.creater = { name: "Jagaa" };
                 }
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: '<h1>Hi Angular2Beta</h1>'
+                        template: '<h1>Hi Angular2Beta by {{creater.name}}</h1>'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
                 return AppComponent;
             })();
+            ;
             browser_1.bootstrap(AppComponent);
         }
     }
